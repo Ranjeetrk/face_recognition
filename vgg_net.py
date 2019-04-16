@@ -42,4 +42,4 @@ def verifyFace(img1, img2):
         print("unverified! they are not same person!")
 
 
-# verifyFace('images/rishi.png', 'images/rishi29.png')
+# verifyFace('images/rk.png', 'images/rk29.png')
