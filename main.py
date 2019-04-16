@@ -39,3 +39,5 @@ while condition:
                 print(euclidean_distance)
     print("Do you want to continue? (y/n)")
     condition = True if input() == 'y' else False
+    
+    
