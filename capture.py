@@ -21,3 +21,5 @@ def take_image():
     cv2.imwrite(base + '.jpg', frame)
     cap.release()
     cv2.destroyAllWindows()
+
+    
