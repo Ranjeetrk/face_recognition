@@ -12,3 +12,5 @@ def get_face_locations():
         pil_image = Image.fromarray(face_image)
         pil_image.save("face_detected/face-{}.jpg".format(i))
         i = i + 1
+  
+
