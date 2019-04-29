@@ -19,4 +19,9 @@ def take_image():
     cv2.imwrite(base + '.jpg', frame)"""
     cap.release()
     cv2.destroyAllWindows()
+<<<<<<< HEAD
     return frame
+=======
+
+    
+>>>>>>> d715cc6e81537b6bc31392906def4a474f0b6bde
