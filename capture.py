@@ -4,7 +4,6 @@ import os
 
 def take_image():
     cap = cv2.VideoCapture(0)
-
     frame = None
     font = cv2.FONT_HERSHEY_SIMPLEX
     while True:
@@ -13,11 +12,11 @@ def take_image():
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
-    inp = 'pic'
-
+    """name = 'pic'
     base = os.path.abspath(os.path.dirname(__file__))
-    base = os.path.join(base, "Images")
-    base = os.path.join(base, inp)
-    cv2.imwrite(base + '.jpg', frame)
+    base = os.path.join(base, "images")
+    base = os.path.join(base, name)
+    cv2.imwrite(base + '.jpg', frame)"""
     cap.release()
     cv2.destroyAllWindows()
+    return frame
