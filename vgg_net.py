@@ -97,7 +97,7 @@ def verifyFace(img1, img2):
 
 
 <<<<<<< HEAD
-# verifyFace('images/rishi.jpg', 'images/rishi29.jpg')
+# verifyFace('images/ranjeet.jpg', 'images/ranjeet2.jpg')
 =======
 # verifyFace('images/rk.png', 'images/rk29.png')
 >>>>>>> d715cc6e81537b6bc31392906def4a474f0b6bde
