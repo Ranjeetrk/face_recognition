@@ -50,10 +50,6 @@ while condition:
                 print("Hello "+row[1]+" !")
                 print(euclidean_distance)
     print("Do you want to continue? (y/n)")
-<<<<<<< HEAD
     condition = True if input() == 'y' else False
-=======
     condition = True if input() == 'y' else False
     
-    
->>>>>>> d715cc6e81537b6bc31392906def4a474f0b6bde
