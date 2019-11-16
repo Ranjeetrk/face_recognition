@@ -10,13 +10,11 @@ def get_face_locations(image):
     base = os.path.abspath(os.path.dirname(__file__))
     base = os.path.join(base, "face_detected")
     i = 0
-<<<<<<< HEAD
     for(x,y,w,h) in faces:
         face_image = image[y:y+h,x:x+w]
         temp = os.path.join(base, "face-"+str(i))
         cv2.imwrite(temp + '.jpg', face_image)
         i = i + 1
-=======
     for face_location in face_locations:
         top, right, bottom, left = face_location
         face_image = image[top:bottom, left:right]
@@ -25,4 +23,3 @@ def get_face_locations(image):
         i = i + 1
   
 
->>>>>>> d715cc6e81537b6bc31392906def4a474f0b6bde
