@@ -1,9 +1,11 @@
-# face_recognition
-Develop face_recognition model using transfer-learning .
-I have used VGG16() model with pre-trained 
-created main.py file for main operation of face_recognition ,At first call capture.py to take image from webcam and stored in folder Images
-secondly we want all the face-laction from that Image for that we have created face_location.py which will be called after the capture.py in the main and stored all the detected faces in face_detected folder.
-Now we have to creat vector of all the faces using transfer-learning concept.and these face vectors are to be compaired with existing face_vectors stored in face_vectors directory. This face_vectors directory contains all the face vectors of known people from our dataset.
-For the purpose of comparison of two vectors we get the eucledian distance between both vectors and if this distance is less than some threshold, epsilon=45 in our case, then these are same persons. 
-Check the main.py file for detailed code.
-
+# Face Recognition and Verification
+Face Recognition and Verification are widely used for security and identification in recent years.
+So using this model, users can recognize a person's face and verify the person from the stored database. This project developed for attendance system using face Recognition.
+## VGG16
+Using transfer-learning, I have take VGG16 model for extracting the facial features. Which will be used to compare to a person's face and verify by choosing threshold value. [code](https://github.com/Ranjeetrk/face_recognition/blob/master/vgg_net.py)
+##
+ - I have used OpenCV haarcascade_frontalface_default for getting face location coordinate from the input image.
+ - Now we have to create a vector of all the faces using the transfer-learning concept, and these face vectors are to be compared with existing face_vectors stored in face_vectors directory.
+ - For comparison of two vectors, I have used Euclidean distance between both vectors. If this distance is less than some threshold (e.g., epsilon=45), then we say they are the same person.
+ - For creating dataset run [dataset_creater]([https://github.com/Ranjeetrk/face_recognition/blob/master/dataset_creater.py](https://github.com/Ranjeetrk/face_recognition/blob/master/dataset_creater.py))
+ - Run [main.py]([https://github.com/Ranjeetrk/face_recognition/blob/master/main.py](https://github.com/Ranjeetrk/face_recognition/blob/master/main.py)) for face verification .
